@@ -29,6 +29,6 @@ app.post('/posts',(req,res)=>{
 
 // changing port values
 
-app.listen(3000,()=>{
+app.listen(4000,()=>{
  console.log("listening in port 3000")
 });

@@ -1,13 +1,12 @@
 const express = require("express");
 const { randomBytes } = require("crypto");
 const bodyParser = require("body-parser");
+const cors = require ('cors');
 
 const app= express();
-
-// parsing files changes done
-
-
 app.use(bodyParser.json());
+// Importing Cors into our app
+app.use(cors());
 
 const posts={};
 
@@ -30,5 +29,5 @@ app.post('/posts',(req,res)=>{
 // changing port values
 
 app.listen(4000,()=>{
- console.log("listening in port 3000")
+ console.log("listening in port 4000")
 });

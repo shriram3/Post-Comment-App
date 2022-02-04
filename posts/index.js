@@ -38,6 +38,14 @@ app.post('/posts',async (req,res)=>{
     res.status(201).send(posts[id]);
 });
 
+// Event listener
+
+app.post('/events',(req,res)=>{
+	console.log("Event recieved:"+req.body.type);
+
+	res.status({});
+});
+
 // changing port values
 
 app.listen(4000,()=>{

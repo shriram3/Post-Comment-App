@@ -16,3 +16,6 @@ React App which manages post and comments
  - Comments listening in port 4001
  - CORS stands for Cross-Origin Resource Sharing . It allows us to relax the security applied to an API
 
+# Event-Bus
+ - Handles the all the events triggered by post and comment services
+ - For implementing Async communication

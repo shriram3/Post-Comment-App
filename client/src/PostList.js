@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import CreateComment from "./CreateComment";
+import CommentsList from "./CommentsList";
 
 export default () =>{
     // Default value given is object , so we have given an empty object and not empty array
@@ -28,6 +29,7 @@ export default () =>{
         key={post.id}>
             <div className="card-body">
                 <h3>{post.title}</h3>
+                < CommentsList postId={post.id} />
                 < CreateComment postId={post.id} />
             </div>
 

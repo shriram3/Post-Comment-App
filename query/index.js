@@ -15,6 +15,8 @@ app.get('/posts',(req,res)=>{
 
 app.post('/events',(req,res)=>{
     const { type , data } = req.body;
+    console.log(type);
+
 
     if(type=== "PostCreated"){
 
@@ -24,12 +26,26 @@ app.post('/events',(req,res)=>{
 
     if(type === "CommentCreated"){
         
-        const {id, postId , content} = data;
+        const {id, postId , content, status} = data;
 
         const post = posts[postId];
-        post.comments.push({id,content});
+        post.comments.push({id,content, status});
         
     }
+
+    if (type === "CommentUpdated"){
+        console.log("In comment updated");
+
+        const {id, postId , content, status} = data;
+
+        const post = posts[postId];
+        const comment = post.comments.find(comment=>{
+            return comment.id == id ;
+        })
+        comment.status =status ;
+        console.log(comment);
+    }
+    
     console.log(posts);
     res.send({status : 'OK'});
 });

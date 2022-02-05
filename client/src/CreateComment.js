@@ -17,14 +17,14 @@ export default ({postId}) =>{
     return <div>
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <label>Comments</label>
+                <label>Add comments:</label>
                 <input
                  value={content}
                  onChange={e => setContent(e.target.value)}
                  className="form-control"
                 />
             </div>
-            <button className="btn btn-primary">Submit</button>
+            <button className="btn btn-primary">Comment</button>
         </form>
     </div>;
 };

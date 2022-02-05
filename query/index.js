@@ -25,7 +25,7 @@ app.post('/events',(req,res)=>{
     }
 
     if(type === "CommentCreated"){
-        
+        console.log(data);
         const {id, postId , content, status} = data;
 
         const post = posts[postId];
@@ -44,6 +44,7 @@ app.post('/events',(req,res)=>{
         })
         comment.status =status ;
         console.log(comment);
+
     }
     
     console.log(posts);

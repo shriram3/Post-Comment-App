@@ -9,8 +9,8 @@ app.use(cors());
 
 posts = {};
 
-app.post('/posts',(req,res)=>{
-    res.send(post);
+app.get('/posts',(req,res)=>{
+    res.send(posts);
 });
 
 app.post('/events',(req,res)=>{

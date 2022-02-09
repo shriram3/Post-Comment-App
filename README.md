@@ -20,12 +20,15 @@ React App which manages post and comments
  - Handles the all the events triggered by post and comment services
  - For implementing Async communication
 
- # Docker Comments
+ # Docker Commands
 
 -  Building the Docker file with the tag
 
-### `docker build -t <Docker-id>/<Service-name> .`
-
+```
+docker build -t <Docker-id>/<Service-name> .
+```
 -  Run 
 
-### `docker run <Docker-id>/<Service-name>`
+```
+docker run <Docker-id>/<Service-name>
+```

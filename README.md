@@ -19,3 +19,13 @@ React App which manages post and comments
 # Event-Bus
  - Handles the all the events triggered by post and comment services
  - For implementing Async communication
+
+ # Docker Comments
+
+-  Building the Docker file with the tag
+
+### `docker build -t <Docker-id>/<Service-name> .`
+
+-  Run 
+
+### `docker run <Docker-id>/<Service-name>`

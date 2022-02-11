@@ -19,6 +19,10 @@ React App which manages post and comments
 # Event-Bus
  - Handles the all the events triggered by post and comment services
  - For implementing Async communication
+ 
+# Moderator
+ - This service moderates the comments.
+ - The output of these service will be processed by comment service before communicating to other services.
 
  # Docker Commands
 

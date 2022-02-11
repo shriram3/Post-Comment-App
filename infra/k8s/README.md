@@ -5,7 +5,17 @@
 
 # Common commanads
 
+- Creating a Pod/Deployment
+
 ````
 kubectl apply -f <file-name>.yaml
 
 ````
+
+- Get running pods
+
+````
+kubectl get pods
+````
+
+- Most commands are similar to docker syntax

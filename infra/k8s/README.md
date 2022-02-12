@@ -17,5 +17,22 @@ kubectl apply -f <file-name>.yaml
 ````
 kubectl get pods
 ````
+ - Restart deployment
+
+````
+kubectl rollback restart deployment <depl-name>
+````
 
 - Most commands are similar to docker syntax
+
+# Push images to docker hub
+
+````
+docker push <docker-id>/<img-name>
+````
+
+- If access is denied, try logging in docker before pushing
+
+````
+docker login
+````
